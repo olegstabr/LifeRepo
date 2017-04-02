@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 
 namespace Life
 {
@@ -24,6 +25,10 @@ namespace Life
 
         private GraphicsDeviceManager graphics;
 
+        private Grid grid;
+
+        private KeyboardState keyboardState, lastKeyboardState;
+
         public LifeMainWindow()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -35,7 +40,16 @@ namespace Life
             graphics.PreferredBackBufferHeight = (int)ScreenSize.Y;
 
 
-            InitializeComponent();
+            IsMouseVisible = true;
+        }
+
+        protected override void Initialize()
+        {
+            base.Initialize();
+
+            grid = new Grid();
+
+            keyboardState = lastKeyboardState = Keyboard.GetState();
         }
     }
 }

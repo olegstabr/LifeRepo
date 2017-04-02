@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // LifeMainWindow
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(582, 553);
-            this.Name = "LifeMainWindow";
-            this.Text = "Game of Life";
-            this.ResumeLayout(false);
+//            this.SuspendLayout();
+//            // 
+//            // LifeMainWindow
+//            // 
+//            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+//            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+//            this.ClientSize = new System.Drawing.Size(582, 553);
+//            this.Name = "LifeMainWindow";
+//            this.Text = "Game of Life";
+//            this.ResumeLayout(false);
 
         }
 
